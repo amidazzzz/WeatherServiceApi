@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Information</title>
+</head>
+<body>
+<h1>Weather Information for <span th:text="${weather.cityName}"></span></h1>
+<p>Temperature: <span th:text="${weather.weatherDetails.temperature}"></span> &deg;C</p>
+<p>Humidity: <span th:text="${weather.weatherDetails.humidity}"></span>%</p>
+</body>
+</html>
